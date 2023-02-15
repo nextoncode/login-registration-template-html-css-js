@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Login-Register page</title>
 </head>
-<body>
 
+<body>
+    <div id="main">
+        <div class="main-content">
+            <div class="toggle-btns">
+                <button data-formid="login-form" class="btn active">Log In</button>
+                <button data-formid="register-form" class="btn ">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <div class="form-content">
+                <form action="" id="login-form" class="active">
+                    <input class="form-input" placeholder="User Id" type="text" id="user-id">
+                    <input class="form-input" placeholder="Enter Password" type="password" id="password">
+                    <div class="form-check">
+                        <input class="remember-password" type="checkbox" name="remember-password" id="remember-password">
+                        <label class="form-check-label" for="remember-password">
+                            Remember password
+                        </label>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Log in">
+                </form>
+                <form action="" id="register-form">
+                    <input class="form-input" placeholder="User Id" type="text" id="user-id">
+                    <input class="form-input" placeholder="Email Id" type="email" id="email">
+                    <input class="form-input" placeholder="Enter Password" type="password" id="password">
+                    <div class="form-check">
+                        <input class="remember-password" type="checkbox" name="remember-password" id="remember-password">
+                        <label class="form-check-label" for="remember-password">
+                            I agree to the terms & conditions
+                        </label>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
